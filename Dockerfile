@@ -7,7 +7,7 @@ ADD CentOS-Base.repo-6x /etc/yum.repo.d/CentOS-Base.repo
 
 # 安装openssh-server
 RUN echo "192.168.16.136  mirror.tfs.com" >>  /etc/hosts \
-  && yum install -y openssh-server openssh-clients
+  && yum install -y openssh-server openssh-clients sudo
 
 # 设置时区
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
